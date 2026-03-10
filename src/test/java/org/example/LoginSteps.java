@@ -9,11 +9,11 @@ import org.example.LoginPage;
 public class LoginSteps {
 
     LoginPage login = new LoginPage(Hooks.driver);
-
-    @Given("user launches the browser")
-    public void launch_browser()
-    {
-    }
+    
+@Given("user launches the browser")
+public void launch_browser() {
+    System.out.println("Browser launched");
+}
 
     @When("user opens login page")
     public void open_login()
